@@ -2,7 +2,6 @@ import userModel from "../model/userSchema.js";
 import { hashPassword,comparePassword} from "../helpers/authHelper.js";
 import  jwt from "jsonwebtoken";
 import nodemailer from 'nodemailer'
-import async from "hbs/lib/async.js";
 export const registerController = async (req, res) => {
     try {
       const { name, email, password, phone, address } = req.body;
